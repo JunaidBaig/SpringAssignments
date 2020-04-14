@@ -1,0 +1,5 @@
+package com.mirza.updateAndDelete.repositories;
+
+public interface BookRepository {
+
+}

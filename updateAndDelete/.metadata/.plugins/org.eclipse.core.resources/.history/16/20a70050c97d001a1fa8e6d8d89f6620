@@ -1,0 +1,5 @@
+package com.mirza.updateAndDelete.book;
+
+public class Book {
+
+}
