@@ -10,6 +10,7 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -25,6 +26,7 @@ public class Book {
     private String description;
     @Size(min = 3, max = 40)
     private String language;
+    @NotNull
     @Min(100)
     private Integer numberOfPages;
     // This will not allow the createdAt column to be updated after creation
